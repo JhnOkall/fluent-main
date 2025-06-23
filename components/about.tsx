@@ -59,7 +59,9 @@ export function AboutUsSection() {
           </div>
           <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-2xl">
             <Image
-              src="https://placehold.co/800x600.png"
+              src="/2.png"
+              width={800}
+              height={600}
               alt="Team collaborating in an office in Africa"
               fill
               className="object-cover"

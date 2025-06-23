@@ -33,8 +33,10 @@ export function HeroSection() {
           </div>
           <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl">
             <Image
-              src="https://placehold.co/1200x900.png"
+              src="/1.png"
               alt="Fluent Platform Dashboard"
+              width={1200}
+              height={900}
               fill
               className="object-cover"
               data-ai-hint="collaboration business"
