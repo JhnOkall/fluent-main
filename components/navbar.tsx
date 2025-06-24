@@ -29,7 +29,7 @@ export function Navbar() {
       <div className="container flex h-14 items-center px-4 md:px-6 max-w-7xl mx-auto">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Image src="/logo.svg" alt="Fluent Logo" height={32} width={32} />
+            <Image src="/logo.svg" alt="Fluent Logo" height={24} width={24} />
             <span
               className="hidden font-bold sm:inline-block font-headline"
               style={gradientTextStyle}
@@ -69,8 +69,8 @@ export function Navbar() {
               <Image
                 src="/logo.svg"
                 alt="Fluent Meet Logo"
-                height={32}
-                width={32}
+                height={24}
+                width={24}
                 className="mr-2"
               />
               <span
@@ -95,7 +95,7 @@ export function Navbar() {
           </SheetContent>
         </Sheet>
         <Link href="/" className="flex items-center space-x-2 md:hidden">
-          <Image src="/logo.svg" alt="Fluent Logo" height={32} width={32} />
+          <Image src="/logo.svg" alt="Fluent Logo" height={24} width={24} />
           <span className="font-bold font-headline" style={gradientTextStyle}>
             Fluent
           </span>

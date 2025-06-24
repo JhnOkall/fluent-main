@@ -3,6 +3,12 @@ import { Twitter, Github, Linkedin } from "lucide-react";
 import Image from "next/image";
 
 export function Footer() {
+  const gradientTextStyle = {
+    background: "linear-gradient(135deg, #46d9e1 0%, #eb4d1e 100%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    backgroundClip: "text",
+  };
   return (
     <footer className="border-t">
       <div className="container py-8 px-4 md:px-6 max-w-7xl mx-auto">
@@ -10,7 +16,12 @@ export function Footer() {
           <div className="flex flex-col gap-4 items-start max-w-sm">
             <Link href="/" className="flex items-center space-x-2">
               <Image src="/logo.svg" alt="Fluent Logo" height={32} width={32} />
-              <span className="text-2xl font-bold font-headline">Fluent</span>
+              <span
+                className="text-2xl font-bold font-headline"
+                style={gradientTextStyle}
+              >
+                Fluent
+              </span>
             </Link>
             <p className="text-muted-foreground">
               Productivity tools built for Africa, priced for Africa. Driving
