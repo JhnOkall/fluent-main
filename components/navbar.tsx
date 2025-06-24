@@ -4,7 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Mountain } from "lucide-react";
+import { Menu } from "lucide-react";
+import Image from "next/image";
 
 export function Navbar() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -28,7 +29,7 @@ export function Navbar() {
       <div className="container flex h-14 items-center px-4 md:px-6 max-w-7xl mx-auto">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Mountain className="h-6 w-6 text-primary" />
+            <Image src="/logo.svg" alt="Fluent Logo" height={32} width={32} />
             <span
               className="hidden font-bold sm:inline-block font-headline"
               style={gradientTextStyle}
@@ -65,7 +66,13 @@ export function Navbar() {
               className="mb-4 flex items-center"
               onClick={() => setIsSheetOpen(false)}
             >
-              <Mountain className="mr-2 h-6 w-6 text-primary" />
+              <Image
+                src="/logo.svg"
+                alt="Fluent Meet Logo"
+                height={32}
+                width={32}
+                className="mr-2"
+              />
               <span
                 className="font-bold font-headline"
                 style={gradientTextStyle}
@@ -88,7 +95,7 @@ export function Navbar() {
           </SheetContent>
         </Sheet>
         <Link href="/" className="flex items-center space-x-2 md:hidden">
-          <Mountain className="h-6 w-6 text-primary" />
+          <Image src="/logo.svg" alt="Fluent Logo" height={32} width={32} />
           <span className="font-bold font-headline" style={gradientTextStyle}>
             Fluent
           </span>

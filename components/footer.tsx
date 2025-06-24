@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Mountain, Twitter, Github, Linkedin } from "lucide-react";
+import { Twitter, Github, Linkedin } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -8,7 +9,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div className="flex flex-col gap-4 items-start max-w-sm">
             <Link href="/" className="flex items-center space-x-2">
-              <Mountain className="h-8 w-8 text-primary" />
+              <Image src="/logo.svg" alt="Fluent Logo" height={32} width={32} />
               <span className="text-2xl font-bold font-headline">Fluent</span>
             </Link>
             <p className="text-muted-foreground">
